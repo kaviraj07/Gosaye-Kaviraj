@@ -485,6 +485,89 @@ a {
 }
 
 
+/* responsiveness for tablets */
+
+@media only screen and (max-width: 1024px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    .block-main {
+        margin: 0%;
+        padding: 10%;
+        row-gap: 20px;
+        height: 100vh;
+    }
+    .block-main .welcome-text {
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        color: var(--enhance-color);
+    }
+    .block-main .welcome-text h1 {
+        color: var(--primary-color);
+        font-size: 20px;
+    }
+    .block-main .welcome-text p {
+        font-size: 15px;
+        line-height: normal;
+        text-align: justify;
+    }
+    .block-main .profile-img {
+        height: 50%;
+        min-width: 50px;
+        min-height: 50px;
+        min-height: 250px;
+        max-height: 470px;
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: 25%;
+        margin: 0%;
+        padding: 0%;
+        justify-self: center;
+        display: flex;
+    }
+    #skills-wrapper {
+        padding-top: 5%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+    #contact {
+        height: 25vh;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 50px;
+        max-width: 75%;
+        padding-top: 0%;
+        margin: 1em auto;
+        font-size: small;
+    }
+    .comp-cards {
+        padding-top: 0%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 50px;
+        margin: 1em auto;
+        font-size: small;
+    }
+    [class ^="skill"] p {
+        font-size: small;
+    }
+    #skills-wrapper {
+        padding-top: 5%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+    }
+}
+
+
 /* Media for printing*/
 
 @media print {
