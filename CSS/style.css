@@ -40,9 +40,10 @@ html {
 }
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: var(--gradient);
+    padding-bottom: 70px;
 }
 
 #top a {
@@ -342,6 +343,7 @@ a {
     padding: 50px;
     background-color: var(--secondary-color);
     color: var(--text-color);
+    min-height: 100vh;
 }
 
 .comp-cards {
@@ -429,17 +431,23 @@ a {
 
 /* responsiveness for mobile */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 740px) {
     * {
         margin: 0%;
         padding: 0%;
     }
-    .hero nav {
+    .hero nav ul {
         display: none;
+    }
+    .hero nav #top a {
+        font-size: 20px;
+    }
+    .hero nav img {
+        height: 25px;
     }
     .block-main {
         margin: 0%;
-        padding: 10%;
+        padding: 0%;
         row-gap: 20px;
         height: 100vh;
     }
@@ -480,7 +488,12 @@ a {
         gap: 20px;
     }
     #contact {
-        height: 25vh;
+        height: 40vh;
+        padding: 0%;
+    }
+    #contact div {
+        padding: 0px 10px 0px 10px;
+        gap: 5px;
     }
     .timeline-items::before {
         left: 7px;
@@ -522,14 +535,14 @@ a {
 
 /* responsiveness for tablets */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
     * {
         margin: 0%;
         padding: 0%;
     }
     .block-main {
         margin: 0%;
-        padding: 10%;
+        padding: 0%;
         row-gap: 20px;
         height: 100vh;
     }
@@ -549,7 +562,7 @@ a {
         text-align: justify;
     }
     .block-main .profile-img {
-        height: 50%;
+        height: 75%;
         min-width: 50px;
         min-height: 50px;
         min-height: 250px;
@@ -570,7 +583,8 @@ a {
         gap: 20px;
     }
     #contact {
-        height: 25vh;
+        height: 40vh;
+        padding: 0%;
     }
     .cards {
         display: grid;
