@@ -84,7 +84,31 @@ nav ul {
     margin-right: 20px;
 }
 
-nav img {
+nav .openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    justify-self: right;
+}
+
+nav ul .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .openMenu .fa.fa-bars {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+nav .closeMenu .fa.fa-times {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+nav li img {
     height: 40px;
 }
 
@@ -555,7 +579,27 @@ a {
         padding: 0%;
     }
     .hero nav ul {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--secondary-color);
+        transition: top 1s ease;
         display: none;
+    }
+    .hero nav ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
     }
     .hero nav #top a {
         font-size: 20px;
@@ -693,6 +737,29 @@ a {
         margin: 0%;
         padding: 0%;
     }
+    .hero nav ul {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--secondary-color);
+        transition: top 1s ease;
+        display: none;
+    }
+    .hero nav ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
     .block-main {
         margin: 0%;
         padding: 0%;
@@ -769,5 +836,31 @@ a {
     }
     [class ^="pub"] legend {
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    .hero nav ul {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--secondary-color);
+        transition: top 1s ease;
+        display: none;
+    }
+    .hero nav ul .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
     }
 }
