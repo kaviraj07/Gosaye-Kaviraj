@@ -1,5 +1,5 @@
 //card clicks handlers
-const card = document.querySelectorAll('.card');
+const card = document.querySelectorAll('.card, .pub');
 
 card.forEach((ele) => {
     ele.mainLink = ele.querySelector('.main-link');

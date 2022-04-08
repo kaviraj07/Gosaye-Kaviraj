@@ -186,7 +186,7 @@ nav ul li a:hover::before {
 }
 
 #exp-wrapper {
-    padding-top: 5%;
+    padding: 5%;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(1, 100%);
@@ -221,6 +221,79 @@ nav ul li a:hover::before {
 
 [class ^="exp"] ul {
     padding-left: 25px;
+}
+
+#publications {
+    padding: 50px;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+#pub-wrapper {
+    padding: 5%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+}
+
+[class ^="pub"] {
+    border: 5px solid var(--text-color);
+    border-radius: 5px;
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    object-fit: contain;
+    align-items: center;
+    background-color: var(--background-gradient);
+    font-weight: bold;
+    color: var(--enhance-color);
+}
+
+[class ^="pub"] legend {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-size: 25px;
+}
+
+[class ^="pub"] h4 {
+    font-style: italic;
+    color: var(--text-color);
+}
+
+[class ^="pub"] ul {
+    padding-left: 25px;
+}
+
+.pub footer {
+    background-color: var(--enhance-color);
+    color: var(--secondary-color);
+    padding: .5rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 25%;
+    justify-self: center;
+}
+
+.pub:hover {
+    transform: scale(1.05);
+    transition: all 0.15s ease;
+    cursor: pointer;
+    color: var(--enhance-color);
+    box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 19%), 0 5px 53px 0 rgb(0 29 255 / 73%);
+    border-color: var(--primary-color);
+}
+
+.pub:hover footer {
+    background-color: var(--primary-color);
+    color: var(--enhance-color);
+}
+
+.pub:hover p {
+    color: var(--enhance-color);
 }
 
 #education {
@@ -591,6 +664,25 @@ a {
     [class ^="exp"] ul {
         font-size: smaller;
     }
+    [class ^="pub"] {
+        padding: 20px;
+    }
+    [class ^="pub"] legend {
+        font-size: 20px;
+        text-align: center;
+    }
+    [class ^="pub"] h3 {
+        font-size: medium;
+    }
+    [class ^="pub"] h4 {
+        font-size: small;
+    }
+    [class ^="pub"] p {
+        font-size: smaller;
+    }
+    [class ^="pub"] footer {
+        width: 75%;
+    }
 }
 
 
@@ -674,5 +766,8 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 20px;
+    }
+    [class ^="pub"] legend {
+        text-align: center;
     }
 }
