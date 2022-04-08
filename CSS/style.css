@@ -575,6 +575,21 @@ a {
     [class ^="skill"] p {
         font-size: small;
     }
+    [class ^="exp"] {
+        padding: 20px;
+    }
+    [class ^="exp"] legend {
+        font-size: 20px;
+    }
+    [class ^="exp"] h3 {
+        font-size: medium;
+    }
+    [class ^="exp"] h4 {
+        font-size: small;
+    }
+    [class ^="exp"] ul {
+        font-size: smaller;
+    }
 }
 
 
