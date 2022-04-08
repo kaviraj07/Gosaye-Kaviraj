@@ -178,11 +178,56 @@ nav ul li a:hover::before {
     border-radius: 25%;
 }
 
-#education {
+#work {
     padding: 50px;
     min-height: 100vh;
     color: var(--text-color);
     background-image: var(--gradient2);
+}
+
+#exp-wrapper {
+    padding-top: 5%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+}
+
+[class ^="exp"] {
+    border: 5px solid var(--text-color);
+    border-radius: 5px;
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    object-fit: contain;
+    align-items: center;
+    background-color: var(--background-gradient);
+    font-weight: bold;
+    color: var(--enhance-color);
+}
+
+[class ^="exp"] legend {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+[class ^="exp"] h4 {
+    font-style: italic;
+    color: var(--text-color);
+}
+
+[class ^="exp"] ul {
+    padding-left: 25px;
+}
+
+#education {
+    padding: 50px;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-image: var(--gradient3);
 }
 
 .timeline-items {
